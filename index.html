@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emfound</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body class="font-sans">
+
+<!-- NAVBAR -->
+<header id="site-header" class="fixed w-full top-0 left-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="navbar-inner">
+
+    <!-- LOGO -->
+    <div class="navbar-logo">
+      <img src="assets/images/logo.png" alt="Emfound Logo">
+    </div>
+
+    <!-- MENU (Desktop) -->
+    <nav class="navbar-links">
+      <a href="index.html" class="hover:text-green-700">Home</a>
+      <a href="about.html" class="hover:text-green-700">About</a>
+      <a href="our-work.html" class="hover:text-green-700">Our Work</a>
+      <a href="gallery.html" class="hover:text-green-700">Gallery</a>
+      <a href="contact.html" class="hover:text-green-700">Contact</a>
+    </nav>
+
+    <!-- CTA BUTTON (Desktop) -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="navbar-cta">
+      Get Involved
+    </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menu-btn" class="navbar-toggle" aria-label="Open menu" aria-expanded="false">
+      <span class="material-icons text-3xl text-gray-800" id="menu-icon">menu</span>
+    </button>
+
+  </div>
+
+  <!-- MOBILE MENU — sits inside header so it inherits fixed positioning -->
+  <div
+    id="mobile-menu"
+    class="mobile-menu-drawer md:hidden"
+    aria-hidden="true"
+  >
+    <nav class="mobile-menu-nav">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="about.html" class="mobile-menu-link">About</a>
+      <a href="our-work.html" class="mobile-menu-link">Our Work</a>
+      <a href="gallery.html" class="mobile-menu-link">Gallery</a>
+      <a href="contact.html" class="mobile-menu-link">Contact</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="mobile-menu-cta">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative h-screen w-full">
+
+  <!-- VIDEO BACKGROUND -->
+  <video autoplay muted loop playsinline class="absolute w-full h-full object-cover">
+    <source src="assets/videos/banner.mp4" type="video/mp4">
+  </video>
+
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- CONTENT -->
+  <div class="relative z-10 flex items-center justify-center h-full text-center px-4">
+
+    <div data-aos="fade-up" class="max-w-2xl text-white">
+
+      <h1 class="text-3xl md:text-5xl font-bold leading-tight">
+        Giving Every Child a Chance to Thrive
+      </h1>
+
+      <p class="mt-4 text-lg text-gray-200">
+        Supporting orphaned and vulnerable children through care, education, and opportunity.
+      </p>
+
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="bg-yellow-500 hover:bg-yellow-600 px-6 py-3 rounded-lg text-white font-semibold transition transform hover:scale-105">
+          Get Involved
+        </a>
+
+        <a href="our-work.html" class="border border-white px-6 py-3 rounded-lg text-white hover:bg-white hover:text-black transition">
+          Our Work
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="bg-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4">
+
+    <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+
+      <!-- IMAGE SIDE -->
+      <div data-aos="fade-right" class="relative">
+
+        <div class="overflow-hidden rounded-[40px] shadow-xl">
+          <img
+            src="assets/images/gal-7.jpeg"
+            alt="NGO Outreach"
+            class="w-full h-[420px] md:h-[500px] object-cover transition duration-500 hover:scale-105"
+          >
+        </div>
+
+        <!-- Floating Badge -->
+        <div class="absolute -bottom-6 left-6 bg-white shadow-lg rounded-2xl px-6 py-4">
+          <p class="text-xs text-gray-500 uppercase tracking-wide">Impact</p>
+          <h4 class="text-lg font-semibold text-gray-900">Hope In Action</h4>
+        </div>
+
+      </div>
+
+      <!-- TEXT SIDE -->
+      <div data-aos="fade-left">
+
+        <p class="ow-eyebrow">
+          About Emfound
+        </p>
+
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-1 leading-tight">
+          Empowering Children Through Care, Education, and Opportunity
+        </h2>
+
+        <p class="mt-5 text-gray-600 leading-relaxed">
+          Emfound (Emmanuel Foundation and Outreach Development) is committed to improving the lives of orphaned and vulnerable children by providing access to care, education, and meaningful opportunities.
+        </p>
+
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Through outreach programs in underserved communities, hospitals, and correctional facilities, we create lasting impact and empower children to thrive.
+        </p>
+
+        <!-- FEATURES -->
+        <div class="mt-8 space-y-6">
+
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-green-700 text-2xl">favorite</span>
+            <p class="text-gray-700">Support for orphaned and vulnerable children</p>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-green-700 text-2xl">school</span>
+            <p class="text-gray-700">Educational empowerment and mentorship programs</p>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <span class="material-icons text-green-700 text-2xl">groups</span>
+            <p class="text-gray-700">Community outreach and humanitarian services</p>
+          </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-10">
+          <a href="#" class="inline-block bg-green-700 hover:bg-green-800 text-white px-7 py-3 rounded-lg font-medium transition">
+            Learn More
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="bg-gray-50 py-16 md:py-24">
+  <div data-aos="fade-up" data-aos-delay="200" class="max-w-7xl mx-auto px-4">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Impact in Numbers</h2>
+      <p class="mt-4 text-gray-600">Real impact measured through lives touched, communities reached, and opportunities created.</p>
+    </div>
+
+    <div class="stat-box">
+
+      <div class="curve-card-yellow-1">
+        <div class="card-text">
+          <h3 class="stat-box-h3 stat-number" data-target="500">0</h3>
+          <p class="stat-box-p">Volunteers Worldwide</p>
+        </div>
+      </div>
+
+      <div class="curve-image-1">
+        <img src="assets/images/stats1.jpeg" class="w-full h-full object-cover">
+      </div>
+
+      <div class="curve-card-yellow-2">
+        <div class="card-text">
+          <h3 class="stat-box-h3 stat-number" data-target="200">0</h3>
+          <p class="stat-box-p">Community Projects</p>
+        </div>
+      </div>
+
+      <div class="curve-card-dark">
+        <div class="card-text">
+          <h3 class="stat-box-h3 stat-number" data-target="100000">0</h3>
+          <p class="stat-box-p">Lives Impacted</p>
+        </div>
+      </div>
+
+      <div class="curve-card-green">
+        <div class="card-text">
+          <h3 class="stat-box-h3 stat-number" data-target="300">0</h3>
+          <p class="stat-box-p">Educational Programs</p>
+        </div>
+      </div>
+
+      <div class="curve-image-2">
+        <img src="assets/images/stats2.jpeg" class="w-full h-full object-cover">
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section class="focus-section">
+  <div class="container">
+
+    <div class="section-header">
+      <h2>What We Do</h2>
+      <p>Our work focuses on creating lasting impact through targeted programs that support vulnerable children and communities.</p>
+    </div>
+
+    <div class="focus-grid">
+
+      <div data-aos="fade-up" data-aos-delay="0" class="focus-card">
+        <span class="material-icons focus-icon">favorite</span>
+        <h3>Child Support</h3>
+        <p>Providing care, welfare, and essential resources for orphaned and vulnerable children.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="100" class="focus-card">
+        <span class="material-icons focus-icon">school</span>
+        <h3>Education</h3>
+        <p>Supporting learning through school programs, mentorship, and educational materials.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="200" class="focus-card">
+        <span class="material-icons focus-icon">public</span>
+        <h3>Community Outreach</h3>
+        <p>Engaging underserved communities through impactful outreach and humanitarian services.</p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-delay="300" class="focus-card">
+        <span class="material-icons focus-icon">diversity_3</span>
+        <h3>Social Inclusion</h3>
+        <p>Promoting inclusion, advocacy, and equal opportunities for every child.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- PAST EVENTS -->
+<section class="ow-section" id="past-events">
+  <div class="ow-container">
+
+    <div class="ow-section-header" data-aos="fade-up">
+      <span class="ow-eyebrow">What We've Done</span>
+      <h2>Past Events</h2>
+      <p>A look back at moments where lives were touched and hope was restored. These three highlights represent the heart of what we do.</p>
+    </div>
+
+    <div class="past-events-grid">
+
+      <!-- EVENT 1 -->
+      <div class="past-event-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="past-event-flyer">
+          <img src="assets/images/gal-12.jpeg" alt="Hospital Outreach Flyer">
+          <div class="past-event-badge completed">
+            <span class="material-icons">check_circle</span> Completed
+          </div>
+        </div>
+        <div class="past-event-info">
+          <div class="past-event-meta">
+            <span class="meta-tag hospital-tag">
+              <span class="material-icons">local_hospital</span> Hospital Outreach
+            </span>
+            <span class="meta-location">
+              <span class="material-icons">location_on</span> Nassarawa State
+            </span>
+          </div>
+          <h3>Hospital Outreach</h3>
+          <p>We visited villages across Nassarawa State, distributing gifts, snacks, and providing warm health support to young parents, children and elderly ones.</p>
+          <div class="past-event-highlights">
+            <div class="highlight-item">
+              <span class="material-icons">people</span>
+              <span>150+ families visited</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">volunteer_activism</span>
+              <span>30 volunteers deployed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EVENT 2 -->
+      <div class="past-event-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="past-event-flyer">
+          <img src="assets/images/gal-27.jpeg" alt="School Support Program Flyer">
+          <div class="past-event-badge completed">
+            <span class="material-icons">check_circle</span> Completed
+          </div>
+        </div>
+        <div class="past-event-info">
+          <div class="past-event-meta">
+            <span class="meta-tag school-tag">
+              <span class="material-icons">school</span> Education
+            </span>
+            <span class="meta-location">
+              <span class="material-icons">location_on</span> Kwara State
+            </span>
+          </div>
+          <h3>School Support Program</h3>
+          <p>Educational materials including textbooks, notebooks, and stationery were distributed to hundreds of vulnerable children in public schools across Kwara State.</p>
+          <div class="past-event-highlights">
+            <div class="highlight-item">
+              <span class="material-icons">menu_book</span>
+              <span>500+ books distributed</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">school</span>
+              <span>4 schools supported</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EVENT 3 -->
+      <div class="past-event-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="past-event-flyer">
+          <img src="assets/images/gal-24.jpeg" alt="Rural Outreach Flyer">
+          <div class="past-event-badge completed">
+            <span class="material-icons">check_circle</span> Completed
+          </div>
+        </div>
+        <div class="past-event-info">
+          <div class="past-event-meta">
+            <span class="meta-tag outreach-tag">
+              <span class="material-icons">public</span> Community Outreach
+            </span>
+            <span class="meta-location">
+              <span class="material-icons">location_on</span> FCT, Abuja
+            </span>
+          </div>
+          <h3>Rural Community Outreach</h3>
+          <p>We reached deep into underserved rural villages in Abuja, delivering food packs, hygiene kits, and clothing to families and children who rarely receive outside support.</p>
+          <div class="past-event-highlights">
+            <div class="highlight-item">
+              <span class="material-icons">home</span>
+              <span>6 villages reached</span>
+            </div>
+            <div class="highlight-item">
+              <span class="material-icons">inventory_2</span>
+              <span>300+ welfare packs given</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     DONATE & PARTNER CTA
+════════════════════════════════════════ -->
+<section class="gallery-cta-section" data-aos="fade-up">
+  <div class="gallery-cta-inner">
+
+    <!-- Left text -->
+    <div class="gallery-cta-text">
+      <span class="gallery-label light">Make a Difference</span>
+      <h2>Emfound Empire<br> a Home for Hope & Healing.</h2>
+      <p>
+        We bring hope and healing to orphaned and vulnerable children through care, education, and opportunity. Your support turns our mission into real work that changes lives.
+      </p>
+    </div>
+
+    <!-- Right buttons -->
+    <div class="gallery-cta-buttons">
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7yxrOh5i9w1QLw4iyWjbu1hwPxaV6yzadaQ2K9-hdCQB2mQ/viewform?usp=sharing&ouid=112746307011378244776" class="gallery-cta-btn donate">
+        <span class="material-icons">volunteer_activism</span>
+        <span>
+          <strong>Donate Now</strong>
+          <small>Fund our next outreach</small>
+        </span>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScjDQptx_AKLlE9wZNUaRioLD65JPKkxVdMgIMgd7iLTcrkOA/viewform?usp=sharing&ouid=112746307011378244776" class="gallery-cta-btn partner">
+        <span class="material-icons">handshake</span>
+        <span>
+          <strong>Partner With Us</strong>
+          <small>Collaborate for impact</small>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Emfound</h3>
+      <p>Emmanuel Foundation and Outreach Development is committed to improving the lives of orphaned and vulnerable children through care, education, and community support.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="our-work.html">Our Work</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: emfoundempire@gmail.com</li>
+        <li>Phone: +234 902 679 4130, <br>+234 913 138 0383</li>
+        <li>Headquarters: Abuja, Nigeria</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/p/Emfound-Empire-100087876270397/"><span class="material-icons">facebook</span></a>
+        <a href="https://x.com/Emfound_Ibidun"><span class="material-icons">close</span></a>
+        <a href="www.youtube.com/@emfoundempire-ye4bm"><span class="material-icons">play_circle</span></a>
+        <a href="instagram.com/emfound_g?igsh=MWs1Z3Jqd2JyNHRrOQ=="><span class="material-icons">photo_camera</span></a>    
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Emfound. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+
+  // Mobile Menu Toggle
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    menuIcon.textContent = isOpen ? "close" : "menu";
+    menuBtn.setAttribute("aria-expanded", isOpen);
+    mobileMenu.setAttribute("aria-hidden", !isOpen);
+  });
+
+  // Close menu when a link is clicked
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("is-open");
+      menuIcon.textContent = "menu";
+      menuBtn.setAttribute("aria-expanded", false);
+      mobileMenu.setAttribute("aria-hidden", true);
+    });
+  });
+</script>
+
+</body>
+</html>

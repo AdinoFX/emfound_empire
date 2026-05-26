@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emfound | Contact Us</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+
+<body class="font-sans">
+
+<!-- ══ NAVBAR ══════════════════════════════ -->
+<header id="site-header" class="fixed w-full top-0 left-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="navbar-inner">
+
+    <div class="navbar-logo">
+      <img src="assets/images/logo.png" alt="Emfound Logo">
+    </div>
+
+    <nav class="navbar-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="our-work.html">Our Work</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" style="color:#166534; font-weight:700;">Contact</a>
+    </nav>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="mobile-menu-cta">Get Involved</a>
+    <a href="" class="navbar-cta">Get Involved</a>
+
+    <button id="menu-btn" class="navbar-toggle" aria-label="Open menu" aria-expanded="false">
+      <span class="material-icons text-3xl text-gray-800" id="menu-icon">menu</span>
+    </button>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu-drawer" aria-hidden="true">
+    <nav class="mobile-menu-nav">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="about.html" class="mobile-menu-link">About</a>
+      <a href="our-work.html" class="mobile-menu-link">Our Work</a>
+      <a href="gallery.html" class="mobile-menu-link">Gallery</a>
+      <a href="contact.html" class="mobile-menu-link" style="color:#166534;">Contact</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="mobile-menu-cta">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ══ HERO BANNER ══════════════════════════ -->
+<section class="contact-hero">
+  <div class="contact-hero-overlay"></div>
+
+  <div class="contact-hero-shapes">
+    <div class="c-shape c-shape-1"></div>
+    <div class="c-shape c-shape-2"></div>
+    <div class="c-shape c-shape-3"></div>
+  </div>
+
+  <div class="contact-hero-content" data-aos="fade-up">
+    <span class="contact-eyebrow">We'd Love to Hear From You</span>
+    <h1>Get In Touch</h1>
+    <p>Whether you want to volunteer, donate, partner with us, or simply learn more — we are just a message away.</p>
+  </div>
+</section>
+
+
+<!-- ══ CONTACT CARDS + MAP ══════════════════ -->
+<section class="contact-main-section">
+  <div class="contact-main-inner">
+
+    <!-- LEFT — Contact Info Cards -->
+    <div class="contact-cards-col">
+
+      <div class="contact-section-label" data-aos="fade-right">
+        <span class="contact-eyebrow">Reach Us Directly</span>
+        <h2>Our Contact Information</h2>
+        <p>You can reach us through any of the channels below. Our team typically responds within 24–48 hours on working days.</p>
+      </div>
+
+      <!-- Card: Email -->
+      <div class="contact-card" data-aos="fade-right" data-aos-delay="50">
+        <div class="contact-card-icon email-icon">
+          <span class="material-icons">email</span>
+        </div>
+        <div class="contact-card-body">
+          <h4>Email Us</h4>
+          <p>For general enquiries and partnerships</p>
+          <a href="mailto:info@emfound.org">info@emfound.org</a>
+        </div>
+        <span class="material-icons contact-card-arrow">arrow_forward</span>
+      </div>
+
+      <!-- Card: Phone -->
+      <div class="contact-card" data-aos="fade-right" data-aos-delay="120">
+        <div class="contact-card-icon phone-icon">
+          <span class="material-icons">call</span>
+        </div>
+        <div class="contact-card-body">
+          <h4>Call Us</h4>
+          <p>Monday – Friday, 9am – 5pm WAT</p>
+          <a href="tel:+2348000000000">+234 800 000 0000</a>
+        </div>
+        <span class="material-icons contact-card-arrow">arrow_forward</span>
+      </div>
+
+      <!-- Card: Location -->
+      <div class="contact-card" data-aos="fade-right" data-aos-delay="190">
+        <div class="contact-card-icon location-icon">
+          <span class="material-icons">location_on</span>
+        </div>
+        <div class="contact-card-body">
+          <h4>Our Location</h4>
+          <p>Based in the heart of Nigeria's capital</p>
+          <a href="https://maps.google.com/?q=Abuja,Nigeria" target="_blank" rel="noopener">Abuja, FCT, Nigeria</a>
+        </div>
+        <span class="material-icons contact-card-arrow">arrow_forward</span>
+      </div>
+
+      <!-- Card: Social -->
+      <div class="contact-card social-card" data-aos="fade-right" data-aos-delay="260">
+        <div class="contact-card-icon social-icon">
+          <span class="material-icons">share</span>
+        </div>
+        <div class="contact-card-body">
+          <h4>Follow Our Journey</h4>
+          <p>Stay updated on our outreach programs</p>
+          <div class="social-links">
+            <a href="#" class="social-pill" aria-label="Facebook">
+              <span class="material-icons">facebook</span> Facebook
+            </a>
+            <a href="#" class="social-pill" aria-label="Instagram">
+              <span class="material-icons">photo_camera</span> Instagram
+            </a>
+            <a href="#" class="social-pill" aria-label="Twitter/X">
+              <span class="material-icons">public</span> Twitter
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT — Map -->
+    <div class="contact-map-col" data-aos="fade-left">
+      <div class="map-wrapper">
+        <div class="map-header">
+          <span class="material-icons">map</span>
+          <span>Find Us — Abuja, FCT, Nigeria</span>
+        </div>
+        <div class="map-frame">
+          <iframe
+            title="Emfound Location — Abuja, Nigeria"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253754.77882777843!2d7.185857!3d9.0564739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e745f4cd62fd9%3A0x53bd17b4a20ea12b!2sAbuja%2C%20Federal%20Capital%20Territory%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1716000000000!5m2!1sen!2sng"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="map-footer">
+          <span class="material-icons">info_outline</span>
+          <span>Serving communities across Abuja and surrounding states</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     DONATE & PARTNER CTA
+════════════════════════════════════════ -->
+<section class="gallery-cta-section" data-aos="fade-up">
+  <div class="gallery-cta-inner">
+
+    <!-- Left text -->
+    <div class="gallery-cta-text">
+      <span class="gallery-label light">Make a Difference</span>
+      <h2>Ways to Connect With Us</h2>
+      <p>
+        Not sure where to start? Here are the most common reasons people reach out to Emfound.
+      </p>
+    </div>
+
+    <!-- Right buttons -->
+    <div class="gallery-cta-buttons">
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7yxrOh5i9w1QLw4iyWjbu1hwPxaV6yzadaQ2K9-hdCQB2mQ/viewform?usp=sharing&ouid=112746307011378244776" class="gallery-cta-btn donate">
+        <span class="material-icons">volunteer_activism</span>
+        <span>
+          <strong>Donate Now</strong>
+          <small>Fund our next outreach</small>
+        </span>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScjDQptx_AKLlE9wZNUaRioLD65JPKkxVdMgIMgd7iLTcrkOA/viewform?usp=sharing&ouid=112746307011378244776" class="gallery-cta-btn partner">
+        <span class="material-icons">handshake</span>
+        <span>
+          <strong>Partner With Us</strong>
+          <small>Collaborate for impact</small>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Emfound</h3>
+      <p>Emmanuel Foundation and Outreach Development is committed to improving the lives of orphaned and vulnerable children through care, education, and community support.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="our-work.html">Our Work</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: emfoundempire@gmail.com</li>
+        <li>Phone: +234 902 679 4130, <br>+234 913 138 0383</li>
+        <li>Headquarters: Abuja, Nigeria</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/p/Emfound-Empire-100087876270397/"><span class="material-icons">facebook</span></a>
+        <a href="https://x.com/Emfound_Ibidun"><span class="material-icons">close</span></a>
+        <a href="www.youtube.com/@emfoundempire-ye4bm"><span class="material-icons">play_circle</span></a>
+        <a href="instagram.com/emfound_g?igsh=MWs1Z3Jqd2JyNHRrOQ=="><span class="material-icons">photo_camera</span></a>    
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Emfound. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- ══ SCRIPTS ═══════════════════════════════ -->
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({ duration: 700, once: true });
+
+  const menuBtn    = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon   = document.getElementById("menu-icon");
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    menuIcon.textContent = isOpen ? "close" : "menu";
+    menuBtn.setAttribute("aria-expanded", isOpen);
+    mobileMenu.setAttribute("aria-hidden", !isOpen);
+  });
+
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("is-open");
+      menuIcon.textContent = "menu";
+      menuBtn.setAttribute("aria-expanded", false);
+      mobileMenu.setAttribute("aria-hidden", true);
+    });
+  });
+</script>
+
+</body>
+</html>

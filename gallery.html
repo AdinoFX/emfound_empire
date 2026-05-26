@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emfound | Gallery</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+</head>
+
+<body class="font-sans">
+
+<!-- NAVBAR -->
+<header id="site-header" class="fixed w-full top-0 left-0 z-50 bg-white/80 backdrop-blur-md shadow-sm">
+  <div class="navbar-inner">
+
+    <div class="navbar-logo">
+      <img src="assets/images/logo.png" alt="Emfound Logo">
+    </div>
+
+    <nav class="navbar-links">
+      <a href="index.html" class="hover:text-green-700">Home</a>
+      <a href="about.html" class="hover:text-green-700">About</a>
+      <a href="our-work.html" class="hover:text-green-700">Our Work</a>
+      <a href="gallery.html" class="hover:text-green-700" style="color:#166534;font-weight:700;">Gallery</a>
+      <a href="contact.html" class="hover:text-green-700">Contact</a>
+    </nav>
+
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="navbar-cta">Get Involved</a>
+
+    <button id="menu-btn" class="navbar-toggle" aria-label="Open menu" aria-expanded="false">
+      <span class="material-icons text-3xl text-gray-800" id="menu-icon">menu</span>
+    </button>
+
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu-drawer" aria-hidden="true">
+    <nav class="mobile-menu-nav">
+      <a href="index.html" class="mobile-menu-link">Home</a>
+      <a href="about.html" class="mobile-menu-link">About</a>
+      <a href="our-work.html" class="mobile-menu-link">Our Work</a>
+      <a href="gallery.html" class="mobile-menu-link" style="color:#166534;">Gallery</a>
+      <a href="contact.html" class="mobile-menu-link">Contact</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJSsr2ZRST--gUZ7kQp553HvhZQTOwl4H1K1fsCwdLCZHZLQ/viewform?usp=sharing&ouid=112746307011378244776" class="mobile-menu-cta">Get Involved</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════
+     HERO BANNER
+════════════════════════════════════════ -->
+<section class="gallery-hero">
+  <div class="gallery-hero-overlay"></div>
+
+  <!-- Floating decorative shapes -->
+  <div class="hero-shape hero-shape-1"></div>
+  <div class="hero-shape hero-shape-2"></div>
+
+  <div class="gallery-hero-content" data-aos="fade-up">
+    <span class="gallery-eyebrow">Moments That Matter</span>
+    <h1>Our Gallery</h1>
+    <p>Every photograph tells the story of a child reached, a community served, and a life changed. Browse through the moments that define our mission.</p>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span class="material-icons">expand_more</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     IMPACT STATS STRIP
+════════════════════════════════════════ -->
+<section class="gallery-stats-strip">
+  <div class="stats-strip-inner">
+
+    <div class="strip-stat" data-aos="fade-up" data-aos-delay="0">
+      <span class="material-icons strip-icon">photo_library</span>
+      <strong>200+</strong>
+      <span>Moments Captured</span>
+    </div>
+
+    <div class="strip-divider"></div>
+
+    <div class="strip-stat" data-aos="fade-up" data-aos-delay="100">
+      <span class="material-icons strip-icon">location_on</span>
+      <strong>15+</strong>
+      <span>Communities Visited</span>
+    </div>
+
+    <div class="strip-divider"></div>
+
+    <div class="strip-stat" data-aos="fade-up" data-aos-delay="200">
+      <span class="material-icons strip-icon">favorite</span>
+      <strong>5,000+</strong>
+      <span>Children Reached</span>
+    </div>
+
+    <div class="strip-divider"></div>
+
+    <div class="strip-stat" data-aos="fade-up" data-aos-delay="300">
+      <span class="material-icons strip-icon">calendar_today</span>
+      <strong>3+</strong>
+      <span>Years of Impact</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FILTER TABS
+════════════════════════════════════════ -->
+<section class="gallery-section">
+  <div class="gallery-container">
+
+    <div class="gallery-header" data-aos="fade-up">
+      <p class="gallery-label">Browse by Category</p>
+      <h2>Captured in the Field</h2>
+      <p class="gallery-subtext">Filter through our programs to see where we've been and the lives we've touched.</p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar" data-aos="fade-up" data-aos-delay="100">
+      <button class="filter-btn active" data-filter="all">
+        <span class="material-icons">apps</span> All
+      </button>
+      <button class="filter-btn" data-filter="hospital">
+        <span class="material-icons">local_hospital</span> Hospital
+      </button>
+      <button class="filter-btn" data-filter="school">
+        <span class="material-icons">school</span> Education
+      </button>
+      <button class="filter-btn" data-filter="outreach">
+        <span class="material-icons">public</span> Outreach
+      </button>
+      <button class="filter-btn" data-filter="mentorship">
+        <span class="material-icons">groups</span> Mentorship
+      </button>
+    </div>
+
+    <!-- ── MASONRY GALLERY GRID ── -->
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!-- HOSPITAL -->
+      <div class="gallery-item tall" data-category="hospital" data-aos="fade-up" data-aos-delay="0">
+        <img src="assets/images/hospital.jpeg" alt="Hospital Outreach">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">local_hospital</span> Hospital Outreach
+          </div>
+          <h3>Bringing Joy to Young Patients</h3>
+          <p>Our team visited children's wards, distributing gifts and providing emotional support to children undergoing treatment.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Abuja, Nigeria
+          </div>
+        </div>
+      </div>
+
+      <!-- SCHOOL -->
+      <div class="gallery-item" data-category="school" data-aos="fade-up" data-aos-delay="50">
+        <img src="assets/images/school.jpeg" alt="School Support">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">school</span> Education
+          </div>
+          <h3>Books That Open Doors</h3>
+          <p>Distributing educational materials to children who would otherwise go without the tools to learn.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Rural Communities
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTREACH -->
+      <div class="gallery-item wide" data-category="outreach" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/images/outreach.jpeg" alt="Community Outreach">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">public</span> Community Outreach
+          </div>
+          <h3>Reaching the Unreached</h3>
+          <p>Venturing into underserved communities to deliver essential supplies, care, and hope to those who need it most.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Northern Nigeria
+          </div>
+        </div>
+      </div>
+
+      <!-- MENTORSHIP -->
+      <div class="gallery-item" data-category="mentorship" data-aos="fade-up" data-aos-delay="150">
+        <img src="assets/images/mentoring.jpeg" alt="Mentorship Program">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">groups</span> Mentorship
+          </div>
+          <h3>Shaping Future Leaders</h3>
+          <p>One-on-one mentorship sessions guiding children toward education, discipline, and a vision for their future.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Abuja, Nigeria
+          </div>
+        </div>
+      </div>
+
+      <!-- HOSPITAL 2 -->
+      <div class="gallery-item" data-category="hospital" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/images/gal-22.jpeg" alt="Care Visit">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">local_hospital</span> Hospital Outreach
+          </div>
+          <h3>Smiles Beyond the Ward</h3>
+          <p>Volunteers attended to the elderly patients, providing companionship and emotional support.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> FCT, Nigeria
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTREACH 2 -->
+      <div class="gallery-item tall" data-category="outreach" data-aos="fade-up" data-aos-delay="250">
+        <img src="assets/images/gal-30.jpeg" alt="Field Outreach">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">public</span> Community Outreach
+          </div>
+          <h3>Welfare Items Distribution</h3>
+          <p>Food, clothing, and hygiene packs delivered to families in underserved communities during our quarterly outreach.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Kogi State
+          </div>
+        </div>
+      </div>
+
+      <!-- SCHOOL 2 -->
+      <div class="gallery-item wide" data-category="school" data-aos="fade-up" data-aos-delay="300">
+        <img src="assets/images/gal-27.jpeg" alt="School Program">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">school</span> Education
+          </div>
+          <h3>Every Child Deserves to Learn</h3>
+          <p>School support programs providing stationery, uniforms, and tuition support for vulnerable children.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Nasarawa State
+          </div>
+        </div>
+      </div>
+
+      <!-- MENTORSHIP 2 -->
+      <div class="gallery-item" data-category="mentorship" data-aos="fade-up" data-aos-delay="350">
+        <img src="assets/images/gal-23.jpeg" alt="Group Session">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">groups</span> Mentorship
+          </div>
+          <h3>Circle of Growth</h3>
+          <p>Group mentorship sessions helping children develop confidence, identity, and a sense of belonging.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Abuja, Nigeria
+          </div>
+        </div>
+      </div>
+
+      <!-- OUTREACH 3 -->
+      <div class="gallery-item" data-category="outreach" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/images/gal-15.jpeg" alt="Rural Visit">
+        <div class="gallery-item-overlay">
+          <div class="overlay-tag">
+            <span class="material-icons">public</span> Community Outreach
+          </div>
+          <h3>Rural Community Drive</h3>
+          <p>Partnering with local leaders to identify and support the most vulnerable children in remote villages.</p>
+          <div class="overlay-meta">
+            <span class="material-icons">location_on</span> Niger State
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- end gallery-grid -->
+
+    <!-- No results message (hidden by default) -->
+    <div class="no-results" id="noResults" style="display:none;">
+      <span class="material-icons">image_not_supported</span>
+      <p>No photos in this category yet. Check back soon!</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     QUOTE / MISSION BREAK
+════════════════════════════════════════ -->
+<section class="gallery-quote-section" data-aos="fade-up">
+  <div class="quote-inner">
+    <span class="material-icons quote-icon">format_quote</span>
+    <blockquote>
+      Every photograph in this gallery represents a real child, a real moment, and a real chance at a better future. This is not just a collection of images — it is a record of lives changed.
+    </blockquote>
+    <cite>— Emfound Team</cite>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     VIDEO / STORY SPOTLIGHT
+════════════════════════════════════════ -->
+<section class="spotlight-section">
+  <div class="spotlight-inner">
+
+    <div class="spotlight-text" data-aos="fade-right">
+      <span class="gallery-label">Behind the Lens</span>
+      <h2>Stories Behind the Photos</h2>
+      <p>
+        Each image in our gallery was captured during a real outreach visit. Behind every smile is a child who was overlooked — until Emfound showed up.
+      </p>
+      <p>
+        Our volunteers document every program so that our supporters can see exactly where their contributions go. Transparency is at the heart of what we do.
+      </p>
+
+      <div class="spotlight-facts">
+
+        <div class="fact-item">
+          <span class="material-icons">check_circle</span>
+          <span>100% of donations go directly to programs</span>
+        </div>
+
+        <div class="fact-item">
+          <span class="material-icons">check_circle</span>
+          <span>Every outreach is documented and reported</span>
+        </div>
+
+        <div class="fact-item">
+          <span class="material-icons">check_circle</span>
+          <span>Photos shared only with child-safe consent</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="spotlight-visual" data-aos="fade-left">
+      <div class="spotlight-card-stack">
+
+        <div class="stack-card stack-back">
+          <img src="assets/images/stats2.jpeg" alt="Outreach moment">
+        </div>
+
+        <div class="stack-card stack-front">
+          <img src="assets/images/outreach.jpeg" alt="Field work">
+          <div class="stack-badge">
+            <span class="material-icons">favorite</span>
+            <span>Impact Verified</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     LIGHTBOX OVERLAY
+════════════════════════════════════════ -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+    <span class="material-icons">close</span>
+  </button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">
+    <span class="material-icons">chevron_left</span>
+  </button>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">
+    <span class="material-icons">chevron_right</span>
+  </button>
+  <div class="lightbox-content">
+    <img id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+</div>
+<div id="lightboxBackdrop" class="lightbox-backdrop"></div>
+
+
+<!-- ═══════════════════════════════════════
+     DONATE & PARTNER CTA
+════════════════════════════════════════ -->
+<section class="gallery-cta-section" data-aos="fade-up">
+  <div class="gallery-cta-inner">
+
+    <!-- Left text -->
+    <div class="gallery-cta-text">
+      <span class="gallery-label light">Make a Difference</span>
+      <h2>You've Seen the Impact.<br>Now Be Part of It.</h2>
+      <p>
+        Every photo you just viewed was made possible by people who chose to act. A donation funds the next outreach. A partnership multiplies the reach. Your move.
+      </p>
+    </div>
+
+    <!-- Right buttons -->
+    <div class="gallery-cta-buttons">
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSc7yxrOh5i9w1QLw4iyWjbu1hwPxaV6yzadaQ2K9-hdCQB2mQ/viewform?usp=sharing&ouid=112746307011378244776" class="gallery-cta-btn donate">
+        <span class="material-icons">volunteer_activism</span>
+        <span>
+          <strong>Donate Now</strong>
+          <small>Fund our next outreach</small>
+        </span>
+      </a>
+
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScjDQptx_AKLlE9wZNUaRioLD65JPKkxVdMgIMgd7iLTcrkOA/viewform?usp=sharing&ouid=112746307011378244776" class="gallery-cta-btn partner">
+        <span class="material-icons">handshake</span>
+        <span>
+          <strong>Partner With Us</strong>
+          <small>Collaborate for impact</small>
+        </span>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <h3>Emfound</h3>
+      <p>Emmanuel Foundation and Outreach Development is committed to improving the lives of orphaned and vulnerable children through care, education, and community support.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="our-work.html">Our Work</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <ul>
+        <li>Email: emfoundempire@gmail.com</li>
+        <li>Phone: +234 902 679 4130, <br>+234 913 138 0383</li>
+        <li>Headquarters: Abuja, Nigeria</li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <div class="footer-socials">
+        <a href="https://www.facebook.com/p/Emfound-Empire-100087876270397/"><span class="material-icons">facebook</span></a>
+        <a href="https://x.com/Emfound_Ibidun"><span class="material-icons">close</span></a>
+        <a href="www.youtube.com/@emfoundempire-ye4bm"><span class="material-icons">play_circle</span></a>
+        <a href="instagram.com/emfound_g?igsh=MWs1Z3Jqd2JyNHRrOQ=="><span class="material-icons">photo_camera</span></a>    
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Emfound. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script src="assets/js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({ duration: 700, once: true });
+
+  // ── Mobile Menu ──────────────────────────
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const menuIcon = document.getElementById("menu-icon");
+
+  menuBtn.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    menuIcon.textContent = isOpen ? "close" : "menu";
+    menuBtn.setAttribute("aria-expanded", isOpen);
+    mobileMenu.setAttribute("aria-hidden", !isOpen);
+  });
+
+  mobileMenu.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.remove("is-open");
+      menuIcon.textContent = "menu";
+      menuBtn.setAttribute("aria-expanded", false);
+      mobileMenu.setAttribute("aria-hidden", true);
+    });
+  });
+
+  // ── Gallery Filter ────────────────────────
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  const noResults = document.getElementById("noResults");
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener("click", () => {
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      const filter = btn.getAttribute("data-filter");
+      let visibleCount = 0;
+
+      galleryItems.forEach(item => {
+        const cat = item.getAttribute("data-category");
+        const match = filter === "all" || cat === filter;
+
+        if (match) {
+          item.style.display = "";
+          item.classList.remove("hidden-item");
+          visibleCount++;
+        } else {
+          item.classList.add("hidden-item");
+          // Wait for fade-out transition then hide
+          setTimeout(() => {
+            if (item.classList.contains("hidden-item")) {
+              item.style.display = "none";
+            }
+          }, 350);
+        }
+      });
+
+      noResults.style.display = visibleCount === 0 ? "flex" : "none";
+    });
+  });
+
+  // ── Lightbox ──────────────────────────────
+  const lightbox       = document.getElementById("lightbox");
+  const lightboxImg    = document.getElementById("lightboxImg");
+  const lightboxCap    = document.getElementById("lightboxCaption");
+  const lightboxClose  = document.getElementById("lightboxClose");
+  const lightboxPrev   = document.getElementById("lightboxPrev");
+  const lightboxNext   = document.getElementById("lightboxNext");
+  const backdrop       = document.getElementById("lightboxBackdrop");
+
+  let currentIndex = 0;
+  let visibleItems = [];
+
+  function openLightbox(index) {
+    visibleItems = [...document.querySelectorAll(".gallery-item:not(.hidden-item)")];
+    currentIndex = index;
+    showLightboxItem(currentIndex);
+    lightbox.classList.add("active");
+    backdrop.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function showLightboxItem(i) {
+    const item = visibleItems[i];
+    if (!item) return;
+    const img   = item.querySelector("img");
+    const title = item.querySelector("h3")?.textContent || "";
+    const desc  = item.querySelector("p")?.textContent  || "";
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCap.innerHTML = `<strong>${title}</strong><span>${desc}</span>`;
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    backdrop.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  galleryItems.forEach((item, i) => {
+    item.addEventListener("click", () => openLightbox(i));
+  });
+
+  lightboxClose.addEventListener("click", closeLightbox);
+  backdrop.addEventListener("click", closeLightbox);
+
+  lightboxNext.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex + 1) % visibleItems.length;
+    showLightboxItem(currentIndex);
+  });
+
+  lightboxPrev.addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+    showLightboxItem(currentIndex);
+  });
+
+  // Keyboard navigation
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("active")) return;
+    if (e.key === "Escape")      closeLightbox();
+    if (e.key === "ArrowRight")  { currentIndex = (currentIndex + 1) % visibleItems.length; showLightboxItem(currentIndex); }
+    if (e.key === "ArrowLeft")   { currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length; showLightboxItem(currentIndex); }
+  });
+</script>
+
+</body>
+</html>
